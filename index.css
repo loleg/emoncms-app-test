@@ -1,0 +1,11 @@
+
+#buddies button {
+	width:auto;
+	float:right;
+}
+
+#buddies { text-align:left; }
+
+button.prod { background-color:lightgreen; }
+button.cons { background-color:lightblue; }
+button.selected { background-color:#999 !important; color:#eee; }

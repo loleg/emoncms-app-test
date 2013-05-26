@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eturnity</title>
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/headers.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/toolbars.css">
+    <link rel="stylesheet" type="text/css" href="css/lists.css">
+    
+	<link rel="stylesheet"  href="index.css" />
+
+</head> 
+<body onload="init()"> 
+
+    <section role="region">
+        <header>
+            <div id="online-status" title="Online"></div>
+            <menu type="toolbar">
+                <button id="install"><span class="icon icon-add">add</span></button>
+            </menu>
+            <h1>
+                Eturnity/ emoncms app
+            </h1>
+        </header>
+    </section>
+    
+	<div id="main" data-role="content" style="text-align:center">
+	
+		<h1 id="iframetitle">Solar PV Generation</h1>
+		
+		<iframe style="width: 500px; height: 260px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.emoncms.org/vis/realtime?embed=1&amp;feedid=11143"></iframe>
+		<p><a href="http://www.emoncms.org" target="_blank">Data from emoncms</a></p>
+	   	
+	   	<section role="region">
+			<header>
+				<button><span class="icon icon-menu">menu</span></button>
+				<menu type="toolbar">
+				<button><span class="icon icon-add">add</span></button>
+				</menu>
+				<h1>Buddies <em>(3)</em></h1>
+			</header>
+		</section>
+
+	   	<section data-type="list" id="buddies">
+		<ul>
+		<li>
+			<p>
+			<button class="prod selected" feedid="11143" title="Solar PV Generation" src="http://www.emoncms.org/vis/realtime?embed=1&amp;feedid=11143">Production</button>
+			Ned Brown <strong>nbown</strong></p>
+		</li><li>
+			<p>
+			<button class="prod" title="Solar PV Generation" src="http://www.emoncms.org/vis/rawdata?embed=1&units=W&fill=1&feedid=14520">Production</button>
+			Petri Klaus <strong>petrik</strong></p>
+		</li><li>
+			<p>
+			<button class="cons" src="http://emoncms.org/vis/multigraph?embed=1&mid=131">Consumption</button>
+			Glyn Hudson <strong>glynhudson</strong></p>
+		</li>
+		</ul>
+		</section>
+	   	
+	</div>
+	
+	<footer>
+        <div role="toolbar">
+            <ul>
+                <li><button id="reload" class="update">Update</button></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="lib/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+	
+<!--	<script src="https://apps.persona.org/include.js"></script> -->
+
+</body>
+</html>
